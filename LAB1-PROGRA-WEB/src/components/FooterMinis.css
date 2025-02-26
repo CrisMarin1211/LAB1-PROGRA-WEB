@@ -1,0 +1,59 @@
+.footer-mini {
+	background-color: #212353; /* Fondo azul oscuro */
+	color: white;
+	text-align: center;
+	padding: 60px 20px;
+	position: relative;
+}
+
+.footer-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+
+.footer-content h2 {
+	font-size: 36px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+
+.footer-content p {
+	font-size: 28px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.button-container {
+	margin-top: 20px;
+}
+
+.button-container button {
+	background-color: #5865f2; /* Azul de Discord */
+	color: white;
+	border: none;
+	padding: 14px 24px;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 28px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+	transition: background 0.3s ease-in-out;
+}
+
+.button-container button:hover {
+	background-color: #4752c4; /* Azul más oscuro */
+}
+
+/* Icono de descarga */
+.button-container button::before {
+	content: '⬇'; /* Ícono de descarga */
+	font-size: 20px;
+}

@@ -1,0 +1,15 @@
+.gif-section2 {
+	width: 100%;
+	height: 100vh; /* Ocupa toda la pantalla */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #000; /* Fondo de respaldo */
+}
+
+.gif-section {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: cover; /* Ajusta la imagen sin distorsión */
+	border-radius: 10px; /* Bordes redondeados (ajústalo si no lo quieres) */
+}
