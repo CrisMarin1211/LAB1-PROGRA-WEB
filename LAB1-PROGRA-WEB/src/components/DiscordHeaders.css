@@ -1,26 +1,26 @@
-.discord-header {
+.discordheaders {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: #1e1f54;
-	padding: 15px 40px;
+	/* background-color: #0c0a20; */
+	padding: 65px 40px;
 }
 
-.discord-header img {
-	height: 40px;
+.discord-logo {
+	height: 45px;
 }
 
 .discord-nav ul {
 	list-style: none;
 	display: flex;
-	gap: 30px;
+	gap: 75px;
 	margin: 0;
 	padding: 0;
 }
 
 .discord-nav li {
-	font-size: 16px;
-	font-weight: bold;
+	font-size: 15px;
+	font-weight: 500;
 	color: white;
 	cursor: pointer;
 	transition: opacity 0.3s;
@@ -30,18 +30,20 @@
 	opacity: 0.7;
 }
 
-.button-discordheader button {
+.button-discordheaders button {
 	background-color: white;
 	color: black;
-	font-size: 16px;
-	font-weight: bold;
+	font-size: 18px;
+	font-weight: 500;
 	border: none;
-	border-radius: 30px;
-	padding: 10px 25px;
+	border-radius: 15px;
+	padding: 8px 20px;
 	cursor: pointer;
-	transition: background-color 0.3s;
+	transition: background-color 0.3s ease-in-out;
+	outline: none;
+	box-shadow: none;
 }
 
-.button-discordheader button:hover {
-	background-color: #dcdcdc;
+.button-discordheaders button:hover {
+	background-color: #bfbfbf;
 }

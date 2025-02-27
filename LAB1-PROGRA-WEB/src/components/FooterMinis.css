@@ -1,29 +1,35 @@
+@import url('https://fonts.cdnfonts.com/css/abc-ginto-nord-unlicensed-trial');
+
 .footer-mini {
-	background-color: #212353; /* Fondo azul oscuro */
+	background: linear-gradient(90deg, #4a3aff, #020c51);
 	color: white;
 	text-align: center;
-	padding: 60px 20px;
+	padding: 80px 20px;
 	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.footer-content {
+.footer-containermini {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
 	gap: 10px;
 }
 
-.footer-content h2 {
-	font-size: 36px;
-	font-weight: bold;
+.footer-title {
+	font-family: 'ABC Ginto Nord Unlicensed Trial', sans-serif;
+	font-size: 2rem;
+	font-weight: 700;
 	text-transform: uppercase;
-	margin-bottom: 5px;
+	margin: 0;
 }
 
-.footer-content p {
-	font-size: 28px;
-	font-weight: bold;
+.footer-subtitle {
+	font-family: 'ABC Ginto Nord Unlicensed Trial', sans-serif;
+	font-size: 2rem;
+	font-weight: 700;
 	text-transform: uppercase;
 	margin: 0;
 }
@@ -32,28 +38,36 @@
 	margin-top: 20px;
 }
 
-.button-container button {
-	background-color: #5865f2; /* Azul de Discord */
-	color: white;
+.download-button {
+	background: white;
+	color: black;
 	border: none;
-	padding: 14px 24px;
-	font-size: 18px;
+	padding: 14px 28px;
+	font-size: 20px;
 	font-weight: bold;
-	border-radius: 28px;
+	border-radius: 12px;
 	cursor: pointer;
 	display: flex;
 	align-items: center;
 	gap: 10px;
-	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
 	transition: background 0.3s ease-in-out;
 }
 
-.button-container button:hover {
-	background-color: #4752c4; /* Azul más oscuro */
+.download-button {
+	outline: none;
+	border: none;
 }
 
-/* Icono de descarga */
-.button-container button::before {
-	content: '⬇'; /* Ícono de descarga */
-	font-size: 20px;
+.download-button:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+.download-button:hover {
+	background: #dcdcdcef;
+}
+
+.download-icon {
+	font-size: 22px;
 }

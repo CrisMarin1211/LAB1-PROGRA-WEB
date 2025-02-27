@@ -1,0 +1,21 @@
+.cards-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+.cards-lefts {
+	margin-bottom: 127px;
+	align-self: flex-start;
+}
+
+.cards-rights {
+	margin-bottom: 127px;
+	align-self: flex-end;
+}
+
+.aaa {
+	width: 100px;
+	height: 80px;
+}

@@ -4,11 +4,13 @@ import './FooterMinis.css';
 const FooterMini = ({ data }) => {
 	return (
 		<footer className='footer-mini'>
-			<div className='footer-container'>
-				<h2>{data.title}</h2>
-				<h2>{data.text1}</h2>
+			<div className='footer-containermini'>
+				<h2 className='footer-title'>{data.title}</h2>
+				<h2 className='footer-subtitle'>{data.text1}</h2>
 				<div className='button-container'>
-					<button>{data.button[0].name}</button>
+					<button className='download-button'>
+						<span className='download-icon'>⬇</span> {data.button[0].name}
+					</button>
 				</div>
 			</div>
 		</footer>

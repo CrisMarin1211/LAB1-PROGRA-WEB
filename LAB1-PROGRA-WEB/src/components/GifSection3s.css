@@ -1,0 +1,29 @@
+.gif-section3 {
+	width: 100%;
+	background: linear-gradient(90deg, #4a3aff, #020c51);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: transparent !important;
+	position: relative;
+}
+
+.video1 {
+	width: 60.9375rem;
+	height: auto;
+	border-radius: 10px;
+	object-fit: contain;
+	position: relative;
+}
+
+.video2 {
+	width: 21.5rem;
+	height: auto;
+	border-radius: 10px;
+	object-fit: contain;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -1%);
+	z-index: 10;
+}

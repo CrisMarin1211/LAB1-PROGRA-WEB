@@ -1,0 +1,52 @@
+@import url('https://fonts.cdnfonts.com/css/abc-ginto-nord-unlicensed-trial');
+
+.scrolling-banners {
+	width: 100%;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	padding: 30px 0;
+	height: 60px;
+	position: relative;
+	white-space: nowrap;
+}
+
+.scrolling-wrapper {
+	width: 100%;
+	overflow: hidden;
+}
+
+.scrolling-content {
+	display: flex;
+
+	width: max-content;
+	animation: scrollLeft 20s linear infinite;
+}
+
+.scrolling-item {
+	font-family: 'ABC Ginto Nord Unlicensed Trial', sans-serif;
+	display: flex;
+	align-items: center;
+	font-size: 65px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: white;
+	white-space: nowrap;
+}
+
+.logo {
+	width: 40px;
+	/* height: 40px; */
+	object-fit: contain;
+}
+
+@keyframes scrollLeft {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-50%);
+	}
+}

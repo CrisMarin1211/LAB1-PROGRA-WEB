@@ -1,38 +1,44 @@
 import { useState } from 'react';
 import { pageData } from './Data/data.js';
-import Card from './components/Card.jsx';
+import CardContainer from './components/CardContainer.jsx';
 import Container from './components/Container.jsx';
 import DiscordHeader from './components/DiscordHeader.jsx';
 import FooterBig from './components/FooterBig.jsx';
 import FooterMini from './components/FooterMini.jsx';
-// import GifBackground1 from './components/GifBackground1.jsx';
-// import GifSection2 from './components/GifSection2.jsx';
+import GifBackground1 from './components/GifBackground1.jsx';
+import GifSection2 from './components/GifSection2.jsx';
+import GifSection3 from './components/GifSection3.jsx';
+import ScrollingBanner from './components/scrollingBanner.jsx';
 import Header from './components/Header.jsx';
-import SocialNetworks from './components/SocialNetworks.jsx';
 import './App.css';
 
 function App() {
-	const [cards, setCards] = useState(pageData.CardsSection.CardsInfo);
-
 	return (
 		<div>
 			<DiscordHeader data={pageData.discordHeader} />
 
 			<Header data={pageData.Header} />
 
-			{/* <GifBackground1 data={pageData.gifvar1} /> */}
+			<GifBackground1 data={pageData.gifvar1} />
 
-			{cards.map((card, index) => (
-				<Card key={index} data={card} />
-			))}
+			<CardContainer
+				data={pageData.CardsRight}
+				data2={pageData.CardsLeft}
+				data3={pageData.gifvar2}
+				data4={pageData.scrollingBannerData}
+			/>
+
+			{/* <ScrollingBanner data={pageData.scrollingBannerData} /> */}
 
 			{/* <GifSection2 data={pageData.gifvar2} /> */}
 
 			<FooterMini data={pageData.FooterMini} />
 
-			<SocialNetworks data={pageData.socialNetworks} />
+			<GifSection3 data={pageData.gifvar3} />
 
-			<FooterBig data={pageData.FooterBig} />
+			{/* <SocialNetworks data={pageData.socialNetworks} /> */}
+
+			<FooterBig data={pageData.FooterBig} data2={pageData.socialNetworks} />
 
 			<Container data={pageData.container} />
 		</div>
